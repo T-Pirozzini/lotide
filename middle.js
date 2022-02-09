@@ -24,11 +24,11 @@ const middle = function(arr) {
   if (arr.length <= 2) {
     return middleElements;
   }
-  // if an array has an even number of items, return middle two elements
+  // if array has an odd number of elements, one single element should be returned
   if (arr.length % 2 === 0) {
     middleElements.push(Math.floor(arr.length / 2));
   }
-  // if array has an odd number of elements, one single element should be returned
+  // if an array has an even number of items, return middle two elements
   if (arr.length % 1 === 0) {
     middleElements.push(Math.floor(arr.length / 2) && Math.floor(arr.length / 2) + 1);
   }
