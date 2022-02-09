@@ -19,24 +19,23 @@ const assertArraysEqual = function(actual, expected) {
 
 const middle = function(arr) {
 // initiate a new empty array
-  let middleElements = [];
+  let middleArr = [];
+  let middleElements = Math.floor(arr.length / 2)
   // if an array has one or two elements, no middle - return empty array []
   if (arr.length <= 2) {
-    return middleElements;
-  }
-  // if array has an odd number of elements, one single element should be returned
-  if (arr.length % 2 === 0) {
-    middleElements.push(Math.floor(arr.length / 2));
-  }
+    return middleArr;
+  }  
   // if an array has an even number of items, return middle two elements
-  if (arr.length % 1 === 0) {
-    middleElements.push(Math.floor(arr.length / 2) && Math.floor(arr.length / 2) + 1);
+  if (arr.length % 2 === 0) {
+    middleArr[0] = arr[middleElements - 1];
+    middleArr[1] = arr[middleElements];    
+  }  
+  // if array has an odd number of elements, one single element should be returned
+  if (arr.length % 2 === 1) {
+    middleArr[0] = arr[middleElements];
   }
-  return middleElements;
-};
-  
-
-  
+  return middleArr;
+};  
 
 
 // TEST CODE
