@@ -1,3 +1,11 @@
+const assertArraysEqual = function(actual, expected) {
+  if (eqArrays(actual, expected)) {
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+  }
+};
+
 const eqArrays = function(arr1, arr2) {
   //check if arrays are the same length
   if (arr1.length !== arr2.length) {
@@ -11,16 +19,6 @@ const eqArrays = function(arr1, arr2) {
   }
   return true;
 };
-
-
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 
 const without = function(source, itemsToRemove) {
   if (itemsToRemove.length === 0) return source;
