@@ -22,12 +22,5 @@ const countLetters = function(str) {
 };
 
 countLetters("lighthouse in the house");
-
-
-// assertEqual(countLetters("hello"));
-// // assertEqual(result1["Karima"], undefined);
-// // assertEqual(result1["Fang"], 2);
-// // assertEqual(result1["Agouhanna"], undefined);
-
-
-
+// How to check assertEqual??
+assertEqual(countLetters("hello"));
