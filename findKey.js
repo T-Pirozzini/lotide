@@ -6,7 +6,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const findKey = function(object, callback) {
+const findKey = (object, callback) => {
   for (const element in object) {
     if (callback(object[element])) {
       return element;
