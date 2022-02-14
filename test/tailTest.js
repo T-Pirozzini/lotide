@@ -26,3 +26,20 @@ assertEqual(words.length, 3); // original array should still have 3 elements!
 const words4 = ["Yo Yo", "luigi", "mario", "link", "chun-li"];
 tail(words4); // no need to capture the return value since we are not checking it
 assertEqual(words.length, 3); // original array should still have 3 elements!
+
+// const assert = require('chai').assert;
+// const tail = require('../tail');
+
+// describe("#tail", () => {
+//   it('returns ["Lighthouse", "Labs"] for ["Hello", "Lighthouse", "Labs"]', () => {
+//     const result = ["Hello", "Lighthouse", "Labs"];
+//     assert.strictEqual(tail(result), ["Lighthouse", "Labs"]);
+//   });
+//   it("returns 2 for result2.length", () => {
+//     const result2 = ["Hello", "Lighthouse", "Labs"];
+//     assert.strictEqual(tail(result2.length), 2); 
+  // });  
+  // it("returns 'undefined' for undefined", () => {
+  //   assert.strictEqual(head([]), undefined); 
+  // });
+// });
