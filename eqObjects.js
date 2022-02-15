@@ -6,24 +6,19 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const eqArrays = function(arr1, arr2) {
-  //check if arrays are the same length
-  if (arr1.length !== arr2.length) return false;
-  // check if array index's match
+const eqArrays = function(arr1, arr2) {  
+  if (arr1.length !== arr2.length) return false;  
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] !== arr2[i]) return false;
   }
   return true;
 };
 
-
-const eqObjects = function(obj1, obj2) {
-  // do they have the same number of keys?
+const eqObjects = function(obj1, obj2) {  
   if (Object.keys(obj1).length !== Object.keys(obj2).length) {
     return false;
   }
-  for (const key of Object.keys(obj1)) {
-    // implement Array.isArray against both values
+  for (const key of Object.keys(obj1)) {    
     if (Array.isArray(obj1[key]) && Array.isArray(obj2[key])) {
       return eqArrays(obj1[key], obj2[key]);
     } else {

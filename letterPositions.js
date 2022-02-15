@@ -1,13 +1,10 @@
-const eqArrays = function(arr1, arr2) {
-  //check if arrays are the same length
-  if (arr1.length !== arr2.length) return false;
-  // check if array index's match
+const eqArrays = function(arr1, arr2) {  
+  if (arr1.length !== arr2.length) return false;  
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] !== arr2[i]) return false;
   }
   return true;
 };
-
 
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
@@ -16,7 +13,6 @@ const assertArraysEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-
 
 const letterPositions = function(sentence) {
   let result = {};
@@ -35,5 +31,3 @@ const letterPositions = function(sentence) {
 
 letterPositions("hello");
 letterPositions("hello my friends at lighthouse");
-
-// assertArraysEqual(letterPositions("hello").e, [1]);

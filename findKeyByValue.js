@@ -6,7 +6,6 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-
 const findKeyByValue = function(object, value) {
   for (const key of Object.keys(object)) {  
     if (object[key] === value) {
@@ -14,7 +13,6 @@ const findKeyByValue = function(object, value) {
     } 
   }
 };
-
 
 const bestTVShowsByGenre = { 
   sci_fi: "The Expanse",
