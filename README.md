@@ -26,24 +26,19 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `function1(assertArraysEqual(actual, expected))`: description
-* `function2(...)`: description
-* `function3(...)`: description
-const assertArraysEqual = function(actual, expected):
-const assertEqual = function(actual, expected):
-const assertObjectsEqual = function(actual, expected):
-const countLetters = function(str) {
-const countOnly = function(allItems, itemsToCount) {
-  const eqArrays = function(arr1, arr2) {
-    const eqObjects = function(obj1, obj2) {
-      const findKeyByValue = function(object, value) {
-const findKey = (object, callback) => {
-  const head = function(arr) {
-  const letterPositions = function(sentence) {
-    const map = function(arr, callback) { 
-    const middle = function(arr) {
-      const tail = function(arr) {
-        const takeUntil = function(array, callback) {
-    const without = function(source, itemsToRemove) {
-
-  
+* `function1(assertArraysEqual(actual, expected))`: asserts arrays
+* `function2(assertEqual(actual, expected))`: asserts values
+* `function3(assertObjectsEqual(actual, expected))`: asserts objects
+* `function4(countLetters(str))`: counts letters in a string
+* `function5(countOnly(allItems, itemsToCount))`: counts objects
+* `function6(eqArrays(arr1, arr2))`: compares arrays
+* `function7(eqObjects(obj1, obj2))`: compares objects
+* `function8(findKeyByValue(object, value))`: returns object key value
+* `function9(findKey(object, callback))`: return first key of object
+* `function10(head(arr))`: returns first element of an array
+* `function11(letterPositions(sentence))`: returns index of characters
+* `function12(map(arr, callback))`: applies callback to each element
+* `function13(middle(arr))`: returns middle element in an array
+* `function14(tail(arr))`: returns the array without the first element
+* `function15(takeUntil(array, callback))`: returns elems until cb
+* `function16(withoutfunction(source, itemsToRemove))`: returns an array without the filtered items
