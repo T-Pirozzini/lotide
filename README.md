@@ -40,5 +40,5 @@ The following functions are currently implemented:
 * `function12(map(arr, callback))`: applies callback to each element
 * `function13(middle(arr))`: returns middle element in an array
 * `function14(tail(arr))`: returns the array without the first element
-* `function15(takeUntil(array, callback))`: returns elems until cb
+* `function15(takeUntil(array, callback))`: returns elementss until callback element
 * `function16(withoutfunction(source, itemsToRemove))`: returns an array without the filtered items
